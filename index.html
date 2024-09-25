@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Selector</title>
+    <style>
+        
+
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #hue {
+            touch-action: none;
+           
+        }
+        #gradient {
+            background: black;
+            touch-action: none;
+        }
+        
+        .color-pointer {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            left: 0px;
+            top: 0px;
+            border-radius: 50%;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <canvas id="hue" width="256px" height="40px">Canvas not supported!</canvas>
+        <br />
+        <canvas id="gradient" width="256px" height="256px">Canvas not supported!</canvas>
+        
+        <div class="color-pointer" id="hue-pointer"></div>
+        <div class="color-pointer" id="grad-pointer"></div>
+    </div>
+<p>
+    Color Display
+</p>
+
+
+
+<script src="main.js" type="module" charset="utf-8"></script>
+</body>
+</html>
